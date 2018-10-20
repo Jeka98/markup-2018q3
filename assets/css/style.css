@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    width: 1600px;
+    height: 945px;
+    background-blend-mode: darken;
+    background: rgba(0,0,0,0.7) url(../img/Header_BG.png) no-repeat;
+}
+
+.wrapper {
+    max-width: 1197px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-wrap {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 1px solid #2F2E33;
+}
+
+.logo {
+    margin-left: 3px;
+    margin-top: 8px;
+}
+
+.menu {
+	list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    margin-right: 68px;
+    text-align: center;
+    font: 16px 'Lato', sans-serif;
+    margin-bottom: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.menu__item:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.menu__item:first-child{margin-right: 70px;}
+
+.menu__item:last-child{margin-right: 0px;}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.banner{
+    position: relative;
+    top: 270px;
+    left: 1px;
+    text-align: center;
+}
+
+.banner p{
+    font: 32px 'Georgia', sans-serif;
+    font-style: italic;
+    padding-bottom: 10px;
+    margin: 8px auto;
+    line-height: 29px;
+    color: #fff;
+}
+
+h1{
+    font: 72px 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
