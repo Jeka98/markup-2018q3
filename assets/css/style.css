@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 14px;
-  color: #303030;
   padding: 0;
   margin: 0;
   min-width: 240px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+  color: #303030;
 }
 
 body ul {
@@ -50,18 +50,18 @@ input , input:active , input:focus , input:hover {
 }
 
 .nav-bar__menu ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  list-style: none;
 }
 
 .nav-bar_menu__links {
-  padding: 36px 0 34px 0;
   display: inline-block;
+  padding: 36px 0 34px 0;
   text-decoration: none;
   font-size: 16px;
   color: #ffffff;
@@ -79,16 +79,16 @@ input , input:active , input:focus , input:hover {
 }
 
 .header-overlay {
-  background: rgba(0, 0, 0, 0.83);
   height: 942px;
+  background: rgba(0, 0, 0, 0.83);
 }
 
 .header_text h1 {
+  margin-bottom: 6px;
   font-style: bold;
   text-transform: uppercase;
   font-size: 72px;
   color: #ffffff;
-  margin-bottom: 6px;
 }
 
 .header_text p {
@@ -100,6 +100,8 @@ input , input:active , input:focus , input:hover {
 }
 
 .header_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 850px;
   justify-content: center;
@@ -108,26 +110,28 @@ input , input:active , input:focus , input:hover {
 }
 
 .registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 121px;
   width: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .registration > div {
-  border: 0;
-  width: 50%;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 0;
 }
 
 .registration_login>a, .registration_register>a{
@@ -145,15 +149,15 @@ input , input:active , input:focus , input:hover {
 }
 
 .registration_login:before {
-  border-top: 120px solid #21424a;
-  border-left: 0 solid transparent;
-  border-right: 30px solid transparent;
+  position: absolute;
   content: "";
   height: 0;
   right: -30px;
-  position: absolute;
   top: 0;
   width: 0;
+  border-top: 120px solid #21424a;
+  border-left: 0 solid transparent;
+  border-right: 30px solid transparent;
 }
 
 .registration_login {
@@ -166,8 +170,8 @@ input , input:active , input:focus , input:hover {
 }
 
 .domain {
-  text-align: center;
   padding: 85px 0 92px 0;
+  text-align: center;
 }
 
 .domain_container {
@@ -189,15 +193,15 @@ input , input:active , input:focus , input:hover {
 }
 
 .domain__input_block {
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  margin-bottom: 40px;
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 40px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .domain__input_block select, .domain__input_block_short {
@@ -210,23 +214,23 @@ input , input:active , input:focus , input:hover {
 
 .domain__input_block
 input[type="text"]::-webkit-input-placeholder {
+  height: 48px;
   font-size: 15px;
   color: #868686;
-  height: 48px;
 }
 
 .domain__input_block
 input[type="text"]:-ms-input-placeholder {
+  height: 48px;
   font-size: 15px;
   color: #868686;
-  height: 48px;
 }
 
 .domain__input_block
 input[type="text"]::placeholder {
+  height: 48px;
   font-size: 15px;
   color: #868686;
-  height: 48px;
 }
 
 .domain__input_block input[type="text"],
@@ -284,28 +288,28 @@ input[type="text"]::placeholder {
 }
 
 .table_domain {
-  border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 16px 0;
   width: 100%;
   font-size: 13px;
   color: #cbcbcb;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .table_domain__row_item {
-  padding: 30px 10px;
   position: relative;
+  padding: 30px 10px;
   width: 25%;
 }
 
 .table_domain__row:first-child .table_domain__row_item:after {
-  content: "";
   position: absolute;
-  height: 1px;
-  width: 95%;
-  background: rgba(0, 0, 0, 0.15);
   right: 0;
   bottom: 0;
+  content: "";
+  height: 1px;
+  width: 95%;
   margin: 0 6px;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .table_domain__row:first-child .table_domain__row_item:first-child:after {
@@ -313,20 +317,20 @@ input[type="text"]::placeholder {
 }
 
 .table_domain__row:first-child .table_domain__row_item:last-child:after {
-  width: 85%;
   left: 0;
   right: auto;
+  width: 85%;
 }
 
 td:not(:last-child):before {
-  content: "";
   position: absolute;
-  width: 1px;
-  background: rgba(0, 0, 0, 0.15);
+  content: "";
   right: 0;
   top: 0;
   bottom: 0;
+  width: 1px;
   margin: 5px 0;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .table_domain__row:first-child .table_domain__row_item {
@@ -342,8 +346,8 @@ td:not(:last-child):before {
 }
 
 .packages:before{
-  content: '';
   position: absolute;
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -354,14 +358,14 @@ td:not(:last-child):before {
 }
 
 .packages_bg {
+  position: relative;
   width: 100%;
   padding: 100px 0 0 0;
-  position: relative;
 }
 
 .packages_bg:before{
-  content: '';
   position: absolute;
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -372,24 +376,24 @@ td:not(:last-child):before {
 }
 
 .packages .packages_item {
-  background: #ffffff;
+  width: 17%;
   padding: 35px 25px;
+  background: #ffffff;
   border-top: 5px solid;
   -webkit-box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.1);
-  width: 17%;
 }
 
 .packages_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 0 95px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 3px dotted rgba(44, 62, 80, 0.15);
-  padding: 0 0 95px 0;
 }
 
 .packages_item {
@@ -460,14 +464,14 @@ td:not(:last-child):before {
 }
 
 .packages_item_icons {
-  text-align: center;
+  position: relative;
   width: 55px;
   height: 55px;
   margin: 0 auto 15px auto;
+  padding-right: 10px;
+  text-align: center;
   line-height: 55px;
   border-radius: 50px;
-  position: relative;
-  padding-right: 10px;
 }
 
 .packages_item_icons:before {
@@ -512,20 +516,20 @@ td:not(:last-child):before {
 }
 
 .packages_item_title {
+  padding-bottom: 18px;
+  margin-bottom: 15px;
+  text-align: center;
   font-weight: bold;
   font-size: 16px;
   color: #282828;
   border-bottom: 1px solid #dfdfdf;
-  padding-bottom: 18px;
-  margin-bottom: 15px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .packages_item_comment_block {
-  border-bottom: 1px solid #dfdfdf;
   padding-bottom: 15px;
   margin-bottom: 25px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .packages_item_comment:not(:last-child) {
@@ -549,10 +553,10 @@ td:not(:last-child):before {
 .packages_item_price {
   display: block;
   width: 105px;
-  border-bottom: 3px solid;
   padding-bottom: 3px;
   margin: 0 auto 15px auto;
   text-align: center;
+  border-bottom: 3px solid;
 }
 
 .packages_item_price_comment {
@@ -583,9 +587,6 @@ td:not(:last-child):before {
 }
 
 .about_row {
-  width: 100%;
-  padding: 100px 0 103px 0;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,21 +594,25 @@ td:not(:last-child):before {
   -ms-flex-align: center;
   align-items: center;
   flex-direction: row;
+  width: 100%;
+  padding: 100px 0 103px 0;
 }
 
 .about_text {
-  width: 44%;
   height: 51.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+  width: 44%;
   border-right: 3px dotted rgba(44, 62, 80, 0.15);
 }
 
 .about_photo {
-  width: 55.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 55.5%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   align-items: center;
@@ -620,10 +625,10 @@ td:not(:last-child):before {
 }
 
 .about_text h3 {
-  font-size: 35px;
-  margin-bottom: 20px;
   width: 100%;
   height: 100%;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .about_text p {
@@ -632,8 +637,8 @@ td:not(:last-child):before {
 }
 
 .about_text_link {
-  color: #303030;
   text-decoration: none;
+  color: #303030;
 }
 
 .about_text_link:hover {
@@ -651,27 +656,27 @@ td:not(:last-child):before {
 }
 
 .about_photo__item img {
-  border-radius: 50px;
-  border: 5px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
   height: 90px;
   width: 90px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 .about_photo__item_name {
-  font-size: 17px;
   margin-bottom: 5px;
+  font-size: 17px;
 }
 
 .about_photo__item_prof {
+  margin-bottom: 10px;
   font-size: 15px;
   color: #8e8e8e;
-  margin-bottom: 10px;
 }
 
 .about_photo__item_icons a {
-  color: #bfbfbf;
   padding: 0 11px;
+  color: #bfbfbf;
 }
 
 .about_photo__item_icons a:hover {
@@ -692,11 +697,11 @@ td:not(:last-child):before {
 }
 
 .comment-container {
-  width: 100%;
-  height: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 190px;
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -704,35 +709,36 @@ td:not(:last-child):before {
 }
 
 #comment {
-  margin-top: 40px;
   width: 50%;
+  margin-top: 40px;
   color: #ffffff;
-  font-family: Lato;
+  text-align: center;
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
 }
 
 .comments-slide-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 180px;
   flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   justify-content: space-between;
-  width: 180px;
+
 }
 
 .comments-slide-container > p {
+  padding-right: 20px;
   color: #ffffff;
   font-family: Lato;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   border-right: 1px solid #ffffff;
-  padding-right: 20px;
 }
 
 #slides {
@@ -770,11 +776,11 @@ td:not(:last-child):before {
 }
 
 .functions {
-  width: 100%;
-  padding: 70px 0 65px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  padding: 70px 0 65px 0;
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -782,10 +788,10 @@ td:not(:last-child):before {
 }
 
 .functions_item {
-  width: 19%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 19%;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
@@ -799,9 +805,9 @@ td:not(:last-child):before {
 .functions_item_icons {
   width: 60px;
   height: 60px;
+  margin: 0 auto 17px auto;
   border-radius: 50px;
   text-align: center;
-  margin: 0 auto 17px auto;
 }
 
 .functions_item_icons i {
@@ -847,10 +853,10 @@ td:not(:last-child):before {
 }
 
 .functions_item_name {
+  margin-bottom: 5px;
   font-size: 18px;
   color: #303030;
   text-decoration: none;
-  margin-bottom: 5px;
 }
 
 .functions_item_comment {
@@ -879,10 +885,10 @@ footer .nav_bar__menu {
 }
 
 .footer_comment {
-  padding: 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 35px 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   flex-direction: row;
@@ -890,20 +896,20 @@ footer .nav_bar__menu {
 }
 
 .footer_comment__item:first-child {
-  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 32%;
   flex-direction: column;
   line-height: 26px;
   border-right: 1px solid #393939;
 }
 
 .footer_comment__item:nth-child(2) {
-  width: 41%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 41%;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -912,16 +918,16 @@ footer .nav_bar__menu {
 }
 
 .footer_comment__item:last-child {
-  width: 27%;
-  border-left: 1px solid #393939;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 27%;
   flex-direction: column;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   align-items: flex-end;
+  border-left: 1px solid #393939;
 }
 
 .footer_comment__item:first-child .footer_comment__item_text {
@@ -955,9 +961,9 @@ footer .nav_bar__menu {
 }
 
 .footer_comment__item {
+  padding-top: 15px;
   font-size: 15px;
   color: #686868;
-  padding-top: 15px;
 }
 
 .footer_comment__item__li:hover {
@@ -983,8 +989,8 @@ footer .nav_bar__menu {
 }
 
 .footer_comment__item_text i {
-  font-size: 13.5px;
   padding-right: 10px;
+  font-size: 13.5px;
 }
 
 .footer_comment__item_text_name{
@@ -1005,8 +1011,8 @@ footer .nav_bar__menu {
 
   .nav-bar__logo {
     height: 30px;
-    margin-top: 20px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .nav-bar__menu {
@@ -1053,8 +1059,8 @@ footer .nav_bar__menu {
 
   .footer_comment__item:first-child {
     width: 100%;
-    border-right: none;
     align-items: center;
+    border-right: none;
   }
 
   .footer_comment__item:nth-child(2) {
@@ -1076,8 +1082,8 @@ footer .nav_bar__menu {
     flex-direction: column;
     flex-wrap: wrap;
     width: 40%;
-    font-size: 13px;
     padding-left: 10px;
+    font-size: 13px;
   }
 }
 
@@ -1088,8 +1094,8 @@ footer .nav_bar__menu {
 
   .nav-bar__logo {
     height: 30px;
-    margin-top: 20px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .nav-bar__menu {
@@ -1111,17 +1117,17 @@ footer .nav_bar__menu {
   }
 
   .about_text {
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: none;
-    width: 100%;
   }
 
   .about_photo {
+    width: 100%;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
   }
 
   .about_photo__item img {
@@ -1130,9 +1136,9 @@ footer .nav_bar__menu {
   }
 
   .about_photo__item {
-    margin-top: 10px;
     height: 240px;
     width: 30%;
+    margin-top: 10px;
   }
 
   .about_photo__item_name {
@@ -1140,8 +1146,8 @@ footer .nav_bar__menu {
   }
 
   .about_photo__item_icons a {
-    color: #bfbfbf;
     padding: 0 4px;
+    color: #bfbfbf;
   }
 
   #comment {
@@ -1157,8 +1163,8 @@ footer .nav_bar__menu {
   }
 
   .nav-bar_menu__links {
-    text-align: center;
     padding: 5px 0 5px 0;
+    text-align: center;
   }
 
   .domain__input_block input[type="text"] {
